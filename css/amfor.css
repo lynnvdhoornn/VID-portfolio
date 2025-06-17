@@ -1,0 +1,15 @@
+main section:nth-of-type(2) img:nth-of-type(1) {
+    height: 35em;
+}
+
+main section:nth-of-type(4) {
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    flex-direction: row;
+}
+
+main section:nth-of-type(4) img {
+    height: 43em;
+    width: 43em;
+}
