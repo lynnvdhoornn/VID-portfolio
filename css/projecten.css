@@ -1,0 +1,173 @@
+html {
+    overflow-x: hidden;
+}
+
+header h1 {
+    order: 1;
+    padding: 1em 0 0 1.8em;
+    font-size: 6vw;
+    white-space: normal;
+    margin: 0;
+}
+
+@media (max-width: 40em) {
+    header h1 {
+        padding: 3em 0 0 0.5em;
+        line-height: 1em;
+        font-size: 3em;
+    }
+}
+
+header p {
+    position: relative;
+    padding: 0 20em 1em 10em;
+    white-space: normal;
+    font-size: 1em;
+    order: 2;
+    margin: 0;
+    grid-column-start: 1;
+}
+
+@media (max-width: 50em) {
+    header p {
+        padding: 1em 38em 0 1.8em;
+        font-size: small;
+    }
+}
+
+header div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 55em;
+    /* padding-left: 10em; */
+}
+
+
+
+/* 2e section: Project details */
+section {
+    padding: 0 7.5em;
+  display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 40em) {
+    section {
+        padding: 1em 0 0 0;
+    }
+}
+
+section ol {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    /* list-style-type: none; */
+    padding: 0 2.5em 10em 2.5em;
+    gap: 2em;
+    /* max-width: 59em; */
+    margin: 0;
+    overflow: scroll;
+}
+
+@media (max-width: 40em) {
+    section ol {
+        /* padding: 1em; */
+        /* max-width: 31em; */
+        /* flex-direction: column; */
+    }
+}
+
+section li {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    /* align-items: center; */
+}
+
+section h3 {
+    font-size: 1em;
+    margin: 0;
+    /* padding-top: 0.8em; */
+    order: 2;
+}
+
+@media (max-width: 40em) {
+    section h3 {
+        font-size: medium;
+        padding: 1em 0 0 0;
+    }
+}
+
+section p {
+    font-size: 0.8em;
+    white-space: normal;
+    margin: 0;
+    padding-bottom: 2em;
+    order: 3;
+}
+
+@media (max-width: 40em) {
+    section p {
+        font-size: small;
+        padding-right: 1em;
+    }
+}
+
+section ol li img {
+    width: 1.5em;
+    padding-bottom: 1em;
+    border-radius: 0.5em;
+}
+
+section ol li a img {
+    width: 15em;
+    order: 1;
+    /* border-radius: 0.5em; */
+    padding-bottom:0;
+}
+
+section ol li:nth-of-type(3) a img {
+    width: 12em;
+}
+
+@media (max-width: 40em) {
+    section img {
+        width: 28.5em;
+    }
+}
+
+section ol li img:nth-of-type(2):hover {
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+
+    section video {
+        width: 20em;
+        border-radius: 0.5em;
+    }
+
+
+/******************/
+/*** 4e section ***/
+/******************/
+
+
+footer {
+    display: block;
+    grid-row-start: 4;  
+}
+
+
+header h1, 
+header p, section ol {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+
+header h1.in-view, 
+header p.in-view, section ol.in-view {
+    opacity: 1; 
+    transform: translateY(0); 
+}

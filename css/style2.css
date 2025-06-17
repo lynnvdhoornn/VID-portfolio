@@ -1,0 +1,127 @@
+:root {
+    --color-text: rgba(29, 71, 201, 255);
+    --black-color-text: #000000;
+    --color-background: rgb(251, 251, 236);
+    --dark-color-background: rgba(117, 19, 124, 215);
+    --light-color-background: rgba(157, 29, 164, 255);
+    --lighter-color-background: rgba(230, 170, 230, 255);
+    --black-color-background: #000000;
+    --font-family: 'rocgrotesk';
+    --color-border: #ffff;
+    --white-color-underline: #ffff;
+    --color-underline: #000000;
+    --small-font-size: small;
+    --medium-font-size: medium;
+    --large-font-size: large;
+    --x-large-font-size: x-large;
+    --xx-large-font-size: xx-large;
+    --text-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+.cursor {
+    background: rgba(226, 184, 54, 255);
+}
+
+
+
+/**********/
+/* HEADER */
+/**********/
+
+header img:first-of-type {
+    width: 10em;
+    position: relative;
+    /* top: 4rem; */
+left: 76rem;
+transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 40em) {
+    header img:first-of-type {
+        width: 7em;
+        top: 7rem;
+        left: 22rem;
+    }
+}
+
+
+/******************/
+/*** 1e section ***/
+/******************/
+
+section:first-of-type div {
+    background-color: rgba(251, 251, 236, 0.758);
+}
+
+@media (max-width: 40em) {
+    section:first-of-type div {
+        background-color: rgb(255, 255, 245);
+    }
+}
+
+section:first-of-type div p {
+    color: rgba(29, 71, 201, 255);
+}
+
+section:first-of-type>ul:first-of-type li a p {
+    color: rgba(29, 71, 201, 255);
+    border-color: rgba(29, 71, 201, 255);
+}
+
+section:first-of-type>ul:first-of-type li a p:hover {
+    color: white;
+    background-color: rgba(29, 71, 201, 255);
+}
+
+@media (max-width: 50em) {
+    section:first-of-type>ul:first-of-type li a p:hover {
+        color: rgba(29, 71, 201, 255);
+        background-color: rgb(255, 255, 245);
+    }
+}
+
+section:first-of-type a img {
+    background-color: rgba(29, 71, 201, 255);
+}
+
+@media (max-width: 50em) {
+    section:first-of-type>ul:first-of-type li {
+/* border-bottom: 0.1em; */
+/* border-style: solid; */
+border-color: rgb(255, 255, 245);
+border-radius: 1em;
+background-color: rgb(255, 255, 245);
+    }
+}
+
+
+
+/******************/
+/*** 4e section ***/
+/******************/
+
+
+section:nth-of-type(4) {
+    /* background-color: rgb(251,251,236); */
+    /* padding: 4em 1em 0.5em 1em; */
+}
+
+section:nth-of-type(4) div {
+    background-color: rgba(29, 71, 201, 255);
+}
+
+section:nth-of-type(4) h2 {
+    color: white;
+    /* padding-bottom: 2em; */
+}
+
+section:nth-of-type(4) p {
+    color: white;
+}
